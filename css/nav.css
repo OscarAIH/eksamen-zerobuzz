@@ -6,14 +6,16 @@
 
 body {
     background-color: #0c313f;
-    font-family: STIXGeneral;
+    font-family: 'STIXGeneral', serif;
 }
 
 header {
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top:1rem ;
+    padding-top:1rem;
     display: flex;
     box-sizing: border-box;
+    width: 100%;
+    z-index: 1000;
 }
 
 #Logo {
@@ -27,6 +29,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .logo-button {
@@ -39,12 +42,14 @@ nav {
     font-size: 30px;
     color: white;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .unordered {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .listen {
@@ -58,7 +63,8 @@ nav {
     font-family: Arial, sans-serif;
     display: flex;
     padding: 0 60px;
-    
+    transition: border-bottom 0.3s;
+    position: relative;
 }
 
 .menu:hover {
@@ -75,6 +81,7 @@ nav {
     border-color: #fff;
     font-size: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .listen:hover .submenu {
@@ -91,6 +98,7 @@ nav {
     text-decoration: none;
     display: block;
     padding: 5px;
+    transition: background-color 0.3s;
 }
 
 .submenu a:hover {
@@ -99,12 +107,12 @@ nav {
 
 @media (max-width: 800px) {
     nav {
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
     }
     
     .unordered {
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
     }
     
@@ -117,13 +125,10 @@ nav {
         padding: 15px;
         font-size: 80%;
         width: 100%;
-
-    
     }
 
     #Logo {
         align-items: flex-start;
-
     }
     
     .submenu {
@@ -147,7 +152,12 @@ nav {
     .unordered {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 100%; /* så den fylder hele mobil skærme */
+        position: absolute;
+        top: 120px; 
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
     }
 
     .unordered.show {
@@ -156,10 +166,12 @@ nav {
     
     .menu {
         font-size: 100%;
+        width: 100%;
     }
     
     .submenu {
         padding: 5px;
+        width: 100%;
     }
     
     .submenu a {
