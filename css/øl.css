@@ -10,7 +10,7 @@ body {
     background-color: #0c313f; 
 }
 
-section {
+.ølSection {
     display: flex;
     justify-content: space-between;
     padding: 20px;
