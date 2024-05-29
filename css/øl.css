@@ -7,27 +7,92 @@
 body {
     font-size: 16px;
     color: white;
+    background-color: #0c313f; 
 }
 
 section {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    gap: 20px; 
+    flex-wrap: wrap;
 }
 
-.content {
+.genstand {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: 2px solid rgba(0, 0, 0, 0.5);
     padding: 20px;
-    flex: auto;
+    flex: 1 1 calc(33.333% - 40px); 
+    display: flex;
+    flex-direction: column;
+    min-width: 250px; 
+}
+
+.indhold {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.indhold h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+.produkt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .billed {
-    flex: 1;
-    order: -1;
-    margin-left: 1px;
-    display: block;
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.knap {
+    background-color: #ea8a48;
+    color: white;
+    padding: 5%;
+}
+
+.billed img {
+    width: 200px;
+}
+
+p {
+    margin-top: 20px; /* tilføjer mellemrum imellem listen og p */
 }
 
 
-/* Jeg har et problem med at hver gang jeg laver en container/div/figure inden i mit img, kommer der en stor boks uden om der forhindrer mig i at kunne få teksten tættere på billedet */
+
+
+@media (max-width: 768px) {
+    .beer-section {
+        flex-direction: column; /* Sørge for at øllene går ned i række */
+    }
+
+    .beer-item {
+        flex: 1 1 100%; /* fylder det meste af skærmen */
+        margin-bottom: 20px; /* tilføjer mellemrum */
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .billed {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .billed img {
+        width: 100%; 
+    }
+}
