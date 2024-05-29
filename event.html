@@ -5,18 +5,20 @@
     <link rel="stylesheet" href="css/event.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Et sammenhold uden promille">
-    <meta name="keywords" content="Alkoholfri, øl, Zerobuzz, bryggeri, 2024">
-    <meta name="geo.region" content="DK">
-    <meta name="author" content="Oscar Adam Iversen Hansen">
+    <meta name="description" content="Et sammenhold uden promille">  <!--Seo optimering, beskrivelsen under hjemmesiden når man finder hjemmesiden-->
+    <meta name="keywords" content="Alkoholfri, øl, Zerobuzz, bryggeri, 2024"> <!-- Seo optimering, stikord for at fange brugere-->
+    <meta name="geo.region" content="DK"> <!--Seo optmering-->
+    <meta name="author" content="Oscar Adam Iversen Hansen"> <!--Seo optimering, opfattere afhjemmesiden-->
     <title>Zerobuzz Brew</title>
 </head>
 <body>
-    <header>
+    <header> <!-- Semantisk tag header, indenholder hele nav baren -->
         <nav>
             <div class="logo-button">
-                <button id="Logo"><img src="img/zerobuzz.webp" width="280" alt="Zerobuzz Brew Logo"></button>
-                <div class="burger-menu" id="burger-menu">&#9776;</div>
+                <button class="logo-button" id="Logo" onclick="goToHomePage()">  <!-- javascript function for at komme tilbage på hjemsiden efter at klikke på logo-->
+                    <img src="img/zerobuzz.webp" width="280" alt="Zerobuzz Brew Logo">
+                </button>
+                <div class="burger-menu" id="burger-menu">&#9776;</div> <!-- et unicode tegn for burgermenuen-->
             </div>
             <ul class="unordered" id="nav-menu">
                 <li class="listen">
@@ -73,5 +75,10 @@
         </section>
     </main>
     <script src="nav.js"></script>
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html'; 
+        }
+    </script>
 </body>
 </html>

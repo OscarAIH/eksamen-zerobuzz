@@ -5,14 +5,10 @@
 }
 
 .billeder {
-    flex-direction: row;
     display: flex;
     justify-content: space-between;
     gap: 10px;
-}
-
-#img {
-    padding: 100%;
+    padding: 20px;
 }
 
 .box {
@@ -22,10 +18,51 @@
 
 .box img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .tekst {
-    display: flex;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
 }
 
+.tekst h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.tekst p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .billeder {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 10px;
+    }
+
+    .tekst {
+        width: auto;
+        padding: 5px;
+    }
+
+    .tekst h1 {
+        font-size: 20px;
+    }
+
+    .tekst p {
+        font-size: 14px;
+    }
+}

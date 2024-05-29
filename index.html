@@ -14,8 +14,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo-button">
-                <button  id="Logo"><img src="img/zerobuzz.webp" width="280" alt="Zerobuzz Brew Logo"></button>
+            <div>
+                <button class="logo-button" id="Logo" onclick="goToHomePage()">
+                    <img src="img/zerobuzz.webp" width="280" alt="Zerobuzz Brew Logo">
+                </button>
                 <div class="burger-menu" id="burger-menu">&#9776;</div>
             </div>
             <ul class="unordered" id="nav-menu">
@@ -62,5 +64,10 @@
         </div>
     </main>
     <script src="nav.js"></script>
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html'; 
+        }
+    </script>
 </body>
 </html>
