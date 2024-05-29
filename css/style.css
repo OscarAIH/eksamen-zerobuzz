@@ -1,0 +1,33 @@
+.billeder {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#events {
+    display: flex;
+
+}
+
+#velkommen {
+    margin-right: 1%;
+
+}
+
+#øl {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#velkommen, #øl {
+    flex-direction: column;
+}

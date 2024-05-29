@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    color: white;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    padding: 20px;
+    flex: auto;
+}
+
+.billed {
+    flex: 1;
+    order: -1;
+    margin-left: 1px;
+    display: block;
+}
+
+
+/* Jeg har et problem med at hver gang jeg laver en container/div/figure inden i mit img, kommer der en stor boks uden om der forhindrer mig i at kunne få teksten tættere på billedet */
