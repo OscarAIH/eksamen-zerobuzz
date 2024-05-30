@@ -60,6 +60,9 @@ ul {
     background-color: #ea8a48;
     color: white;
     padding: 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .billed img {
