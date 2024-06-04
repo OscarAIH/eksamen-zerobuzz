@@ -9,53 +9,73 @@ body {
     font-family: 'STIXGeneral', serif;
 }
 
+/* Styling af baggrunden på min nav bar */
+
 header {
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top:1rem;
+    padding: 1rem 0;
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
     width: 100%;
     z-index: 1000;
 }
 
-#Logo {
-    background: none;
-    border: none;
-    display: flex;
-    padding-top: 30px;
-    margin-bottom: 30px;
-}
+/* tager om alt inden i min nav */
 
 nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
+
 
 .logo-button {
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
+
+/* fjerner baggrunden på knapen*/
+
+#Logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* designer burgermenu */
 
 .burger-menu {
     display: none;
     font-size: 30px;
     color: white;
-    margin-left: auto;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
+
+ /* designer min menu */
 .unordered {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around; 
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
 }
+
 
 .listen {
     position: relative;
 }
+
+/* stylere også min menu */
 
 .menu {
     color: white;
@@ -63,14 +83,19 @@ nav {
     font-size: 150%;
     font-family: Arial, sans-serif;
     display: flex;
-    padding: 0 60px;
+    align-items: center;
+    padding: 0 20px;
     transition: border-bottom 0.3s;
-    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .menu:hover {
     border-bottom: 4px solid orange;
 }
+
+/* styler min undermenu */
 
 .submenu {
     display: none;
@@ -94,6 +119,8 @@ nav {
     list-style: none;
 }
 
+/* styler texten i undermenu */
+
 .submenu a {
     color: #fff;
     text-decoration: none;
@@ -106,14 +133,21 @@ nav {
     background-color: orange;
 }
 
-@media (max-width: 800px) {
-    nav {
-        flex-direction: column;
+/* styling af kurv */
+
+.menu img.kurv {
+    width: 48px; 
+    height: auto;
+    margin: 0;
+}
+
+@media (max-width: 768px) { /* styling i ipad format*/
+    header {
         align-items: flex-start;
     }
     
     .unordered {
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
     }
     
@@ -143,24 +177,29 @@ nav {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* styling i mobil format */
+    .logo-button {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+    
     .burger-menu {
         display: block;
-        padding-bottom: 5%;
-        padding-right: 40%;
+        padding: 0;
     }
 
-    #logo {
-        width: 10px;
+    #Logo {
+        width: auto;
         height: auto;
     }
     
     .unordered {
         display: none;
         flex-direction: column;
-        width: 100%; /* så den fylder hele mobil skærme */
+        width: 100%; 
         position: absolute;
-        top: 120px; 
+        top: 110px; 
         left: 0;
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 1000;

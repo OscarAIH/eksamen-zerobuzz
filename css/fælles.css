@@ -2,8 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'STIXGeneral', serif;
 }
 
+/* styling af bredden imellem billederne */
 .billeder {
     display: flex;
     justify-content: space-between;
@@ -11,17 +13,20 @@
     padding: 20px;
 }
 
+/* placering af tekst boks */
 .box {
     position: relative;
     display: inline-block;
 }
 
+/*billederne er responsive */
 .box img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+/* styling  af tekst boks */
 .tekst {
     position: absolute;
     top: 50%;
@@ -40,11 +45,13 @@
 }
 
 .tekst p {
-    margin: 0;
     font-size: 16px;
 }
 
+
+
 @media (max-width: 768px) {
+    /* får billederne til at køre ned i en række på mobil størrese */
     .billeder {
         flex-direction: column;
     }

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'STIXGeneral', serif;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     background-color: #0c313f; 
 }
 
+ /* styling af rammerne og placering på øllens kasse */
 .ølSection {
     display: flex;
     justify-content: space-between;
@@ -18,6 +20,7 @@ body {
     flex-wrap: wrap;
 }
 
+/*styling på selve kassen øllene er placeret i */
 .genstand {
     background-color: rgba(0, 0, 0, 0.5); 
     border: 2px solid rgba(0, 0, 0, 0.5);
@@ -28,6 +31,7 @@ body {
     min-width: 250px; 
 }
 
+/* placering af knap under øl */
 .indhold {
     display: flex;
     flex-direction: column;
@@ -40,7 +44,7 @@ body {
     font-size: 40px;
 }
 
-
+ /* styling af tekst inde i øllen */
 .produkt {
     display: flex;
     align-items: center;
@@ -56,6 +60,7 @@ ul {
     list-style: none;
 }
 
+/* styling af knap */
 .knap {
     background-color: #ea8a48;
     color: white;
@@ -63,6 +68,10 @@ ul {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.knap:hover {
+    background-color: #0056b3;
 }
 
 .billed img {
@@ -73,20 +82,17 @@ p {
     margin-top: 20px; /* tilføjer mellemrum imellem listen og p */
 }
 
-
-
-
 @media (max-width: 768px) {
-    .beer-section {
+    .ølSection {
         flex-direction: column; /* Sørge for at øllene går ned i række */
     }
 
-    .beer-item {
+    .genstand {
         flex: 1 1 100%; /* fylder det meste af skærmen */
         margin-bottom: 20px; /* tilføjer mellemrum */
     }
 
-    .content-container {
+    .produkt {
         flex-direction: column;
     }
 
@@ -96,6 +102,6 @@ p {
     }
 
     .billed img {
-        width: 100%; 
+        width: 60%; 
     }
 }

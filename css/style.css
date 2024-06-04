@@ -7,18 +7,21 @@
     position: relative;
 }
 
+/* position af første billed */
 #velkommen {
     grid-column: 1;
     grid-row: 1;
     position: relative;
 }
 
+/* position af andet billed under første billed */
 #øl {
     grid-column: 1;
     grid-row: 2;
     position: relative;
 }
 
+/* position af tredje billed det til højre */
 #event {
     grid-column: 2;
     grid-row: 1 / 3;
@@ -26,11 +29,15 @@
     position: relative;
 }
 
+/* giver en max bredde på billederne */
+
 .responsiv {
     max-width: 100%;
     height: auto;
 }
 
+
+/* styling af knap */
 .knap {
     position: absolute;
     top: 75%;
@@ -45,11 +52,17 @@
     border-radius: 5px;
 }
 
+.knap:hover {
+    background-color: #0056b3;
+}
+
+
+/*giver den ønsket position for knappen til event */
 #knapEvent {
     top: 90%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*styling/responsiv i mobil/ipad format */
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;

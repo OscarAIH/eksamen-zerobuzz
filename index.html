@@ -5,20 +5,20 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Et sammenhold uden promille">
-    <meta name="keywords" content="Alkoholfri, øl, Zerobuzz, bryggeri, 2024">
-    <meta name="geo.region" content="DK">
-    <meta name="author" content="Oscar Adam Iversen Hansen">
+    <meta name="description" content="Et sammenhold uden promille">  <!--Seo optimering, beskrivelsen under hjemmesiden når man finder hjemmesiden-->
+    <meta name="keywords" content="Alkoholfri, øl, Zerobuzz, bryggeri, 2024"> <!-- Seo optimering, stikord for at fange brugere-->
+    <meta name="geo.region" content="DK"> <!--Seo optmering-->
+    <meta name="author" content="Oscar Adam Iversen Hansen"> <!--Seo optimering, opfattere afhjemmesiden-->
     <title>Zerobuzz Brew</title>
 </head>
 <body>
-    <header>
+    <header> <!-- Semantisk tag header, indenholder hele nav baren -->
         <nav>
-            <div>
-                <button class="logo-button" id="Logo" onclick="goToHomePage()">
+            <div class="logo-button">
+                <button class="logo-button" id="Logo" onclick="goToHomePage()">  <!-- javascript function for at komme tilbage på hjemsiden efter at klikke på logo-->
                     <img src="img/zerobuzz.webp" width="280" alt="Zerobuzz Brew Logo">
                 </button>
-                <div class="burger-menu" id="burger-menu">&#9776;</div>
+                <div class="burger-menu" id="burger-menu">&#9776;</div> <!-- et unicode tegn for burgermenuen-->
             </div>
             <ul class="unordered" id="nav-menu">
                 <li class="listen">
@@ -46,11 +46,15 @@
                         <li><a href="#">Fremtid</a></li>
                     </ul>
                 </li>
-              
+                <li class="listen">
+                    <button class="menu">
+                        <img class="kurv" src="img/kurv.webp" alt="Kurv">
+                    </button>
+                </li>
             </ul>
-        </nav>
+        </nav> <!-- Her slutter min nav bar, alt op og herned til er min navigatiosn bar-->
     </header>
-    <main>
+    <main> <!-- Her er mit main indhold for min forside, hvor jeg har sat mine billeder op i 3 forskellige sections, med hver deres class så jeg kan få styr på dem-->
         <div class="billeder">
             <section id="velkommen">
                 <img src="img/forside-billed-1.webp" class="responsiv" width="900" height="500" alt="Welcome Banner">
@@ -65,10 +69,11 @@
             </section>
         </div>
     </main>
-    <script src="nav.js"></script>
-    <script>
+    <script src="nav.js"></script> <!-- Link til min burgermenus javascript-->
+<!-- Her er mit javascript som der er med til at styre min hjem/logo knap-->
+    <script> 
         function goToHomePage() {
-            window.location.href = 'index.html'; 
+            window.location.href = 'index.html';  
         }
     </script>
 </body>

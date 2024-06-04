@@ -5,27 +5,27 @@
     <link rel="stylesheet" href="css/øl.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Et sammenhold uden promille">
-    <meta name="keywords" content="Alkoholfri, øl, Zerobuzz, bryggeri, 2024">
-    <meta name="geo.region" content="DK">
-    <meta name="author" content="Oscar Adam Iversen Hansen">
+    <meta name="description" content="Et sammenhold uden promille">  <!--Seo optimering, beskrivelsen under hjemmesiden når man finder hjemmesiden-->
+    <meta name="keywords" content="Alkoholfri, øl, Zerobuzz, bryggeri, 2024"> <!-- Seo optimering, stikord for at fange brugere-->
+    <meta name="geo.region" content="DK"> <!--Seo optmering-->
+    <meta name="author" content="Oscar Adam Iversen Hansen"> <!--Seo optimering, opfattere afhjemmesiden-->
     <title>Zerobuzz Brew</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header> <!-- Semantisk tag header, indenholder hele nav baren -->
+        <nav> <!-- -->
             <div class="logo-button">
-                <button class="logo-button" id="Logo" onclick="goToHomePage()">
+                <button class="logo-button" id="Logo" onclick="goToHomePage()">  <!-- javascript function for at komme tilbage på hjemsiden efter at klikke på logo-->
                     <img src="img/zerobuzz.webp" width="280" alt="Zerobuzz Brew Logo">
                 </button>
-                <div class="burger-menu" id="burger-menu">&#9776;</div>
+                <div class="burger-menu" id="burger-menu">&#9776;</div> <!-- et unicode tegn for burgermenuen-->
             </div>
             <ul class="unordered" id="nav-menu">
-                <li class="listen">
-                    <a class="menu" href="#">Øl</a>
+                <li class="listen"> 
+                    <a class="menu" href="øl.html">Øl</a>
                 </li>
                 <li class="listen">
-                    <a class="menu" href="fælles.html">Events</a>
+                    <a class="menu" href="#">Events</a>
                     <ul class="submenu">
                         <li><a href="zero.html">Zerobuzz Tirsdag</a></li>
                         <li><a href="#">Løbeklub</a></li>
@@ -35,7 +35,7 @@
                     </ul>
                 </li>
                 <li class="listen">
-                    <a class="menu" href="#">Fællesskab</a>
+                    <a class="menu" href="fælles.html">Fællesskab</a>
                 </li>
                 <li class="listen">
                     <a class="menu" href="#">Om os</a>
@@ -46,12 +46,17 @@
                         <li><a href="#">Fremtid</a></li>
                     </ul>
                 </li>
+                <li class="listen">
+                    <button class="menu">
+                        <img class="kurv" src="img/kurv.webp" alt="Kurv">
+                    </button>
+                </li>
             </ul>
-        </nav>
+        </nav> <!-- Her slutter min nav bar, alt op og herned til er min navigatiosn bar-->
     </header>
 
-    <main>
-        <section class="ølSection">
+    <main> <!-- Her er mit main indhold til hjemmesiden-->
+        <section class="ølSection"> <!-- Jeg har lavet en section til hver øl, efterfulgt af en givet class for at specifiere indholdet-->
             <article class="genstand">
                 <section class="indhold">
                     <h1>Zerobuzz Juleøl</h1>
@@ -63,10 +68,10 @@
                             <li>Produkt type: Alkoholfri</li>
                             <li>Alkoholprocent: 0,0%</li>
                             <li>Brand er fra: Danmark</li>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis pariatur consectetur autem fugit aliquam qui quaerat iure rem voluptatum impedit vitae sunt illum adipisci ipsa inventore, nisi dolores dolore?</p>
                         </ul>
+                        <p>Vores alkoholfrie juleøl byder på varme julekrydderier, frisk appelsinskal og mørk malt for en rig og fyldig smag. Perfekt til julens hygge – for et bedre sammenhold.</p>
                     </section>
-                    <p><strong>25kr</strong></p>
+                    <p><strong>20kr</strong></p>
                     <button class="knap">Tilføj til kurv</button>
                 </section>
             </article>
@@ -82,10 +87,11 @@
                             <li>Produkt type: Alkoholfri</li>
                             <li>Alkoholprocent: 0,0%</li>
                             <li>Brand er fra: Danmark</li>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam veritatis labore reprehenderit assumenda repudiandae tempora ipsa totam sunt repellat ratione animi cumque natus corporis accusamus suscipit libero quae, illum corrupti?</p>
                         </ul>
+                        <p>Vores alkoholfrie IPA med en kompleks humleprofil og noter af citrus, fyrretræ og passionfrugt. En velafbalanceret bitterhed og fyldig smag gør denne IPA perfekt til enhver lejlighed - for et bedre sammenhold.
+                        </p>
                     </section>
-                    <p><strong>25kr</strong></p>
+                    <p><strong>20kr</strong></p>
                     <button class="knap">Tilføj til kurv</button>
                 </section>
             </article>
@@ -101,16 +107,20 @@
                             <li>Produkt type: Alkoholfri</li>
                             <li>Alkoholprocent: 0,0%</li>
                             <li>Brand er fra: Danmark</li>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae neque quaerat! Natus, fugit similique non ullam nobis error blanditiis autem accusamus repellendus sed deserunt asperiores vel at? Atque, id.</p>
+                            <p>Vores forfriskende alkoholfrie sommerøl med lyse citrusnoter og en let maltprofil. Perfekt afbalanceret med hints af tropiske frugter, ideel til solrige dage og hyggelige stunder - for et bedre sammenhold.
+
+                            </p>
                         </ul>
                     </section>
-                    <p><strong>25kr</strong></p>
+                    <p><strong>20kr</strong></p>
                     <button class="knap">Tilføj til kurv</button>
                 </section>
             </article>
         </section>
     </main>
-    <script src="nav.js"></script>
+    <script src="nav.js"></script> <!-- Link til min burgermenus javascript-->
+    <!-- Her er mit javascript som der er med til at styre min hjem/logo knap-->
+
     <script>
         function goToHomePage() {
             window.location.href = 'index.html'; 
