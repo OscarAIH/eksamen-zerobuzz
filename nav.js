@@ -1,8 +1,8 @@
-document.getElementById('burger-menu').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() { // DOM, er med til at forberede performance og sætter javascript igang når html dokumentet er loaded //
+    var burgerMenu = document.getElementById('burger-menu');
     var navMenu = document.getElementById('nav-menu');
-    if (navMenu.classList.contains('show')) {
-        navMenu.classList.remove('show');
-    } else {
-        navMenu.classList.add('show');
-    }
+
+    burgerMenu.addEventListener('click', function() { // tilføjer en klik function til burgermenu //
+        navMenu.classList.toggle('show');
+    });
 });

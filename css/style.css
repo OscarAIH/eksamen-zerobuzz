@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'STIXGeneral', serif;
+}
+
 .billeder {
     display: grid;
     grid-template-columns: 1fr auto;

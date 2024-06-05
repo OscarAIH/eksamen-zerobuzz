@@ -11,27 +11,27 @@ body {
     background-color: #0c313f; 
 }
 
- /* styling af rammerne og placering på øllens kasse */
+/* Styling af rammerne og placering på øllens kasse */
 .ølSection {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    gap: 20px; 
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-/*styling på selve kassen øllene er placeret i */
+/* Styling på selve kassen øllene er placeret i */
 .genstand {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(0, 0, 0, 0.5);
     padding: 20px;
-    flex: 1 1 calc(33.333% - 40px); 
+    flex: 1 1 calc(33.333% - 40px);
     display: flex;
     flex-direction: column;
-    min-width: 250px; 
+    min-width: 250px;
 }
 
-/* placering af knap under øl */
+/* Placering af knap under øl */
 .indhold {
     display: flex;
     flex-direction: column;
@@ -44,11 +44,12 @@ body {
     font-size: 40px;
 }
 
- /* styling af tekst inde i øllen */
+/* Styling af tekst inde i øllen */
 .produkt {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex: 1;
 }
 
@@ -58,9 +59,19 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* styling af knap */
+.info {
+    width: 100%;
+}
+
+.intro {
+    margin-top: 20px; /* Tilføjer mellemrum imellem listen og intro */
+    width: 100%;
+}
+
 .knap {
     background-color: #ea8a48;
     color: white;
@@ -79,7 +90,7 @@ ul {
 }
 
 p {
-    margin-top: 20px; /* tilføjer mellemrum imellem listen og p */
+    margin-top: 20px; /* Tilføjer mellemrum imellem listen og p */
 }
 
 @media (max-width: 768px) {
@@ -88,8 +99,8 @@ p {
     }
 
     .genstand {
-        flex: 1 1 100%; /* fylder det meste af skærmen */
-        margin-bottom: 20px; /* tilføjer mellemrum */
+        flex: 1 1 100%; /* Fylder det meste af skærmen */
+        margin-bottom: 20px; /* Tilføjer mellemrum */
     }
 
     .produkt {
@@ -99,9 +110,19 @@ p {
     .billed {
         margin-right: 0;
         margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .billed img {
-        width: 60%; 
+        width: 60%;
+    }
+
+    .produkt ul {
+        text-align: center;
+    }
+
+    .produkt p {
+        text-align: center;
     }
 }

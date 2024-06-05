@@ -59,7 +59,7 @@ nav {
 }
 
 
- /* designer min menu */
+ /* designer min menu, og giver afstand imellem hvert element */
 .unordered {
     list-style: none;
     display: flex;
