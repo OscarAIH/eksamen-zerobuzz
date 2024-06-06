@@ -1,6 +1,6 @@
 # robotstxt.org
 
-Sitemap: 
+Sitemap: https://zerobuzz.oscardesign.dk/index.html
 
 User-Agent: *
 Allow: /
